@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f4f4; */
+}
+
+.location-page {
+  max-width: 800px;
+  margin: 20px auto; /* Center the page */
+  padding: 20px;
+  text-align: center;
+  /* background: white; */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.lh1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.lh2, .lh21, .lh22 {
+  font-size: 1.8em;
+  color: #444;
+  margin: 15px 0;
+}
+
+.lp, .lp1, .lp2, .lp3, .lp4 {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background 0.3s;
+  margin-bottom: 30px;
+}
+
+.lp:hover, .lp1:hover, .lp2:hover, .lp3:hover, .lp4:hover {
+  background-color: #e8f0fe; /* Light blue on hover */
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.note {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .lh1 {
+      font-size: 2em;
+  }
+
+  .lh2, .lh21, .lh22 {
+      font-size: 1.5em;
+  }
+
+  .location-page {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.8em;
+  }
+
+  .lh2, .lh21, .lh22 {
+      font-size: 1.4em;
+  }
+
+  .lp, .lp1, .lp2, .lp3, .lp4 { 
+      padding: 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+      font-size: 2.2em;
+  }
+
+  .location-page {
+      padding: 25px;
+  }
+}

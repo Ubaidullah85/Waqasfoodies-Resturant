@@ -1,0 +1,53 @@
+.about-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items horizontally */
+  padding: 40px; /* Spacing around the container */
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-image {
+  width: 100%; /* Full width for the image */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center the image */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.about-image img {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for image */
+}
+
+.about-text {
+  width: 100%; /* Full width for text */
+  max-width: 800px; /* Limit max width for text */
+  text-align: center; /* Center text alignment */
+}
+
+h2.ah2 {
+  font-size: 2.5rem; /* Large heading */
+  color: #333; /* Dark color for contrast */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+p.ap,
+p.ap1,
+p.ap2,
+p.ap3,
+p.ap4,
+p.ap5,
+p.ap6 {
+  font-size: 1.1rem; /* Slightly larger font size */
+  color: #555; /* Softer gray for text */
+  line-height: 1.6; /* Increased line height */
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+p.ap5 {
+  font-weight: bold; /* Make the invitation bold */
+  font-size: 1.2rem; /* Slightly larger for emphasis */
+  color: #007BFF; /* Friendly blue color */
+}

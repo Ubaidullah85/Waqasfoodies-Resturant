@@ -1,0 +1,274 @@
+/* MenuUpdate.css */
+
+.order-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.order-heading {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.menu-container {
+  width: 100%;
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
+}
+
+.menu-heading {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.product-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.product-form input,
+.product-form select,
+.product-form textarea {
+  width: 38%; /* Two inputs per row */
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.product-form textarea {
+  width: 50%; /* Full width for textarea */
+  height: 60px;
+  resize: none;
+}
+
+.add-product-button {
+  width: 70%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-list {
+  text-align: center;
+}
+
+.product-list-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-item {
+  display: inline-block;
+  width: 11%;
+  height: 25vh;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;position: relative;
+  background-color: #fff;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  position: absolute;
+ bottom: 80px;
+ margin-left: 5.7vh;
+}
+
+.product-image {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.product-price {
+  font-size: 0.9rem;
+  padding-top: 40px;
+
+}
+
+.delete-product-button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.password-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.password-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.password-input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-submit {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .product-form input,
+  .product-form select,
+  .product-form textarea {
+    width: 100%;
+  }
+
+  .product-item {
+    width: 35%;
+    height: 20%;
+  }
+  .product-name {
+    font-size: 1.1rem;
+    position: absolute;
+   bottom: 80px;
+   margin-left:4vh;
+  }
+  
+  .product-image {
+    height: 120px;
+  }
+
+  
+.password-form {
+  width:80%;
+  /* max-width: 400px; */
+  /* margin: 2rem auto; */
+  text-align: center;
+}
+
+.password-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.password-input {
+  width: 60%;
+  /* padding: 0.5rem; */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-submit {
+  /* padding: 0.5rem 1rem; */
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+}
+
+@media (max-width: 500px) {
+  .order-heading {
+    font-size: 1.5rem;
+  }
+
+  .menu-heading {
+    font-size: 1.4rem;
+  }
+
+  .product-form input,
+  .product-form select,
+  .product-form textarea {
+    width: 100%;
+  }
+
+  .product-item {
+    width:80%;
+  }
+
+  .product-image {
+    height: 150px;
+  }
+  .product-name{
+margin-left: 15vh;
+
+  }
+
+  .delete-product-button {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+  
+.password-form {
+  width: 80%;
+  /* max-width: 400px; */
+  /* margin: 2rem auto; */
+  text-align: center;
+}
+
+.password-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.password-input {
+  width: 6%;
+  /* padding: 0.5rem; */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-submit {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+}

@@ -1,0 +1,91 @@
+/* Admin Panel Container */
+.admin-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Admin Panel Heading */
+.admin-heading {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Button Container */
+.admin-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Buttons Styling */
+.admin-button {
+  background-color: #d9534f; /* Red color */
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-button:hover {
+  background-color: #c9302c; /* Darker red on hover */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.menu-button {
+  background-color: #007bff;
+}
+
+.menu-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 800px) {
+  .admin-container {
+    width: 85%;
+    padding: 35px;
+  }
+
+  .admin-heading {
+    font-size: 32px;
+  }
+
+  .admin-button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .admin-heading {
+    font-size: 28px;
+  }
+
+  .admin-button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}

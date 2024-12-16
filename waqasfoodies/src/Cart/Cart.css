@@ -1,0 +1,267 @@
+/* Set max height for the cart container */
+/* Styling for the container with scrollbar */
+.containercari {
+  max-height: 545px; /* Adjust based on desired height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: transparent transparent; /* Transparent track and thumb */
+}
+
+/* Styling for Webkit browsers (Chrome, Safari, Edge) */
+.containercari::-webkit-scrollbar {
+  width: 4px; /* Thin scrollbar line */
+  height: 4px; /* Thin horizontal scrollbar line */
+}
+
+.containercari::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a; /* Black color for the thumb */
+  border-radius: 5px; /* Rounded edges */
+  border: none; /* Remove border */
+  transition: background-color 0.3s ease; /* Add smooth animation */
+}
+
+.containercari::-webkit-scrollbar-thumb:hover {
+  background-color: #4b4b4b; /* Lighter black when hovered */
+}
+
+.containercari::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent track */
+}
+
+
+/* General Styles for Cart */
+.cart-container {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: calc(100vh - 200px); /* This leaves space for other content */
+  overflow-y: auto; /* Enable scroll bar when there are too many items */
+}
+
+.cart-item {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* transition: transform 0.2s ease; */
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cart-item-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #282727;
+  text-transform: uppercase;
+}
+
+.cart-item-price,
+.cart-item-size,
+.cart-item-total {
+  font-size: 0.99rem;
+  color: #555;
+}
+
+.cart-item-quantity {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cart-item-quantity button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  /* transition: background-color 0.3s ease; */
+  font-size: 1rem;
+}
+
+.cart-item-quantity button:hover {
+  color: black;
+  background-color: white;
+}
+
+.cart-item-remove {  
+background-color: #f9f9f9; 
+padding:0;
+
+}
+.cart-item-remove .trash{
+  height: 25px;
+}
+.cart-item-remove .trash:hover{
+  background-color:#f9f9f9 ;
+}
+
+
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  margin-left: 3vw;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.proceed-to-order {
+  background-color: #1a1c1a;
+  color: white;
+  padding: 10px 15px;
+  margin-right: 2vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.proceed-to-order:hover {
+  background-color: #4b8c4e;
+}
+
+.total {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-container {
+    margin: 10px;
+  }
+.containercari {
+  max-height: 450px;
+}
+
+  .cart-title {
+    font-size: 1.6rem;
+  }
+
+  .cart-items {
+    gap: 5px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .cart-item-details {
+    align-items: flex-start;
+  }
+
+  .cart-item-name {
+    font-size: 1.1rem;
+  }
+
+  .cart-item-price,
+  .cart-item-size,
+  .cart-item-total {
+    font-size: 0.93rem;
+  }
+
+  .cart-item-remove {
+    width: 100%; /* Make the remove button take up full width */
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    padding: 0; /* Remove extra padding */
+  }
+
+  .cart-item-remove .trash {
+    height: 25px; /* Adjust height if needed */
+    margin-right: 10px; /* Add margin if you want space between icon and item text */
+  }
+
+  .cart-item-quantity {
+    gap: 5px;
+  }
+
+  .cart-item-quantity button {
+    padding: 5px 8px;
+  }
+
+  .cart-total {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin-right: -20px; */
+    margin-left: 56vw;
+  }
+
+  .proceed-to-order {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Mobile view for very small screens */
+@media (max-width: 480px) {
+  .cart-title {
+    font-size: 1.4rem;
+  }
+
+  .cart-item {
+    padding: 8px;
+  }
+
+  .cart-item-details {
+    font-size: 0.9rem;
+  }
+
+  .cart-item-quantity button {
+    padding: 4px 7px;
+  }
+  .cart-item-remove {
+    width: 100%; /* Full width for mobile */
+    display: flex;
+    justify-content: flex-start; /* Align to left */
+  }
+
+  .cart-item-remove .trash {
+    height: 20px; /* Adjust height for very small screens */
+    margin-right: 8px; /* Reduce margin for smaller screens */
+  }
+  .cart-total {
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+
+  .proceed-to-order {
+    padding: 10px 15px;
+  }
+}

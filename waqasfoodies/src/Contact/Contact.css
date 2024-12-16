@@ -1,0 +1,118 @@
+ /* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.Hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  border-bottom: 2px solid #e0e0e0;
+  margin-top: 8vh;
+}
+.location{
+  width: 50vh;
+}
+.Hero div {
+  display: flex;
+  align-items: center;
+
+}
+
+.Hero img {
+  /* margin-right: 10px; */
+  width: 50; /* Adjust image size as needed */
+  height: auto;
+}
+
+/* Heading */
+.ch2 {
+  text-align: center;
+  margin: 8vh 0;
+}
+
+/* Note */
+.cp {
+  margin: 0;
+  padding: 5px;
+  margin-left: 20vh;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+} 
+.inputcontact {
+  width: 80%; /* Adjust width as needed */
+  margin: 10px 0;
+  padding: 10px;
+  border: 0.1px solid rgb(56, 55, 55);
+  border-radius: 5px;
+}
+
+#input1{
+
+  width: 80%; /* Adjust width as needed */
+  margin: 10px 0;
+  padding: 10px;
+  border:0.1px solid rgb(56,55, 55);
+  border-radius: 5px;
+}
+
+/* Style for the submit button */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: white;
+   /* Darker shade on hover */
+color: black;
+  }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Hero {
+    flex-direction: column; /* Stack images on smaller screens */
+    align-items: center; /* Center images */
+  }
+.whatsapp{
+margin-right: 20.5vh;
+padding-top: 2vh;
+
+}
+.email{
+  margin-right: 8vh;
+  padding-top: 3vh;
+
+
+}
+.location{
+  margin-right:4vh ;
+}
+  .Hero div {
+    margin-bottom: 10px; /* Add space between items */
+  }
+  .cp{
+    margin-left: 1vh;
+  }
+
+  input,
+  textarea {
+    width: 90%; /* Adjust width for mobile */
+  }
+}

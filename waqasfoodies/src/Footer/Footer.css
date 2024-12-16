@@ -1,0 +1,80 @@
+/* Apply box-sizing to all elements to ensure padding/margins are included in height calculation */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push content to top and footer to bottom */
+  margin: 0; /* Remove default margin */
+}
+
+/* Main content area should take the available space */
+.main-content {
+  flex: 1; /* This ensures the main content takes up all remaining space */
+}
+
+/* Footer styles remain the same */
+.footer {
+  background-color: #242323;
+  color: #f5f5f5;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  width: 100%; /* Ensure footer takes full width */
+}
+
+/* Footer container */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+}
+
+/* Copyright Section */
+.copyright {
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+
+  .copyright {
+    text-align: right;
+  }
+}

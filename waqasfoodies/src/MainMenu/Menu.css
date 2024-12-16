@@ -1,0 +1,437 @@
+  /* General Layout */
+  .menu-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 5%;
+  }
+
+  /* Title Section */
+  .menu-title {
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Layout Adjustments */
+  .menu-layout {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+  }
+
+  /* Filter Section */
+  .menu-filter-section {
+    width: 23%;
+    padding: 20px;
+    margin-left: 20px;
+    
+  
+  }
+
+  .filter-toggle-button {
+    display: none;
+  }
+
+  .filter-search {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1em;
+  }
+
+  .search-button {
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .search-button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .filter-price-range label {
+    font-size: 1.2em;
+    font-weight: bold;
+    
+    margin-bottom: 10px;
+  }
+
+  .price-input {
+    width: 110px;
+    margin-top: 12px;
+    margin-left: 6px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  .menu-apply-button { margin-left: 6px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  .menu-apply-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #333;
+  }
+
+  /* Divider */
+  .line {
+    height: 100%;
+    width: 1px;
+    background-color: black;
+    margin: 0;
+  }.ufo{
+    display: none;
+  }
+
+  /* Items Section */
+  .menu-item-section {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
+  }
+
+  /* Individual Item */
+  .menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 15px;
+    /* margin-bottom: 40px; */
+    text-align: center;
+  }
+
+  .menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-item-link {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .menu-item-image {
+
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu-item-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .menu-item-price {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 15px;
+  }
+
+  /* Size Selection */
+  .size-selection label {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 0.9em;
+  }
+
+  .size-selection input {
+    margin-right: 5px;
+  }
+
+
+  /* Add to Cart Button */
+  .add-to-cart-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    border: none;
+      border-radius:120px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .add-to-cart-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #333;
+  }
+
+ 
+  .menu-load-more{
+    padding: 10px 20px;
+    /* background-color: #333; */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+margin-top: 20px;
+  }
+
+  .load-more-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #333;
+  }
+
+  /* Cart Panel */
+  .cart-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .cart-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+  .cart-item p {
+    margin: 5px 0;
+  }
+
+  /* Item Added Message */
+  .item-added-message {
+    position: fixed;
+    bottom: 50px;
+    right: 600px;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease, transform 0.5s ease; z-index: 2000;
+
+  }
+
+
+  /* Responsive Query for Small Screens (Tablets & Phones) */
+  @media (max-width: 768px) {
+    /* Centering the item-added-message for small screens */
+    .item-added-message {
+      bottom: 20px;
+      right: 50%;
+      transform: translateX(50%); /* Adjust for small screens */
+      width: 90%; /* Take most of the screen width */
+      text-align: center; /* Center-align the text */
+    }
+    .ufo{
+      margin-top: -20px;
+      display: block;
+      border: none; /* Remove default borders */
+    border-top: 1px solid black; /* Create the top border as the horizontal line */
+    width: 100%; /* Full width of the container */
+    /* margin: 20px 0; */
+    }
+
+    /* Adjusting the cart panel width */
+    .cart-panel {
+      width: 100%; /* Full width on small screens */
+      height: 50%; /* Half screen height */
+    }
+
+    /* Adjusting the filter section */
+    .menu-filter-section {
+      width: 100%; /* Full width for filters */
+      margin-left: 0; /* Remove left margin */
+      /* margin-bottom: 20px; Add spacing below */
+    }
+    .filter-toggle-button{
+      display: block;
+      margin-bottom: 18px;
+    }
+    .show{
+      display: block;
+
+    }
+    .hide{
+      display: none;
+    
+    }
+
+    /* Adjusting the menu grid for smaller devices */
+    .menu-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller column widths */
+    }
+
+    /* Adjusting buttons */
+    .add-to-cart-button{
+      width: 10px;
+    }
+    .load-more-button {
+      padding: 10px 15px;
+      font-size: 0.9em; /* Slightly smaller text */
+    }
+
+    /* Filter search inputs */
+    .search-input {
+      font-size: 0.9em; /* Smaller font size */
+    }
+
+    .search-button {
+      font-size: 0.8em; /* Smaller font size */
+      padding: 0 10px; /* Adjust padding */
+    }
+  }
+
+  /* Very Small Screens (Mobile Portrait) */
+  @media (max-width: 480px) {
+    .item-added-message {
+      bottom: 30px;
+      width: 60%; /* Full width */
+      padding: 10px; /* Reduce padding */
+    }
+
+    .menu-title {
+      font-size: 0.8em; /* Smaller title size */
+    }
+
+    .menu-filter-section {
+      padding: 10px;
+    }
+
+    .menu-item-name {
+      font-size: 1em; /* Reduce font size */
+    }
+
+    .menu-item-price {
+      font-size: 0.9em;
+    }
+
+    .filter-toggle-button{
+      display: block;
+    }
+    .show{
+      display: block;
+
+    }
+    .hide{
+      display: none;
+    
+    }
+    .menu-grid {
+      gap: 10px; /* Reduce spacing between items */
+    }
+
+    .menu-item {
+      padding: 10px; /* Less padding on small screens */
+    }
+  }
+/* Cart button */
+.cart-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+.cart-button-container:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.cart-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff5733;
+  color: white;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/* Vibration Effect */
+.cart-button-container.vibrate {
+  animation: vibrate 0.2s ease-in-out;
+}
+
+@keyframes vibrate {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-button-container {
+    bottom: 10px;
+    right: 10px;
+    padding: 12px;
+  }
+
+  .cart-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .cart-count {
+    font-size: 0.9rem;
+    padding: 4px;
+  }
+.add-to-cart-button{
+  width: 10px;
+}}

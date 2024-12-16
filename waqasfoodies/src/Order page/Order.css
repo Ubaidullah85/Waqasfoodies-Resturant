@@ -1,0 +1,228 @@
+.order-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin-top: 6vw;   /* 6vw margin from the top */
+  margin-bottom: 2vw; /* 2vw margin from the bottom */
+  margin-left: auto;  /* Center the note horizontally */
+  margin-right: auto; /* Center the note horizontally */
+
+
+}
+
+.order-details{
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+ border:1px solid black;
+  margin-right: 2vh;
+}
+
+.order-details-title{
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.order-input-name, .order-input-phone, .order-textarea-address, .order-textarea-notes {
+  width: 100%;
+  padding: 12px;  /* Adjusted padding for better input size */
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 0.1px solid black;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.order-input-name, .order-input-phone {
+  font-size: 1rem;
+}
+
+.order-textarea-address, .order-textarea-notes {
+  height: 100px;
+  resize: none;
+}
+
+.order-extras {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.order-extras label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.order-extras input {
+  margin-right: 10px;
+}
+.order-summary {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid black;
+  margin-right: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-summary-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.summary-items-container {
+  max-height: 300px; /* Adjust height as per your design */
+  overflow-y: auto; /* Show scrollbar if the content exceeds max-height */
+  margin-bottom: 15px; /* Space between items and total */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #28a745 #f1f1f1; /* Thumb color and track color (for Firefox) */
+}
+
+.summary-items-container::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.summary-items-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the track (background) color */
+  border-radius: 5px;
+}
+
+.summary-items-container::-webkit-scrollbar-thumb {
+  background-color: #28a745; /* Set the thumb (scroll part) color */
+  border-radius: 5px;
+}
+
+.summary-items-container::-webkit-scrollbar-thumb:hover {
+  background-color: #218838; /* Darker shade when hovered */
+}
+.summary-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.summary-item-name, .summary-item-size, .summary-item-quantity, .summary-item-price {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.order-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.order-confirm-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.order-confirm-button:hover {
+  background-color: #218838;
+}
+
+
+@media (max-width: 768px) {
+  .order-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+    margin-right: 1.3vw;
+  }
+
+  .order-details, .order-summary {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .order-input-name, .order-input-phone, .order-textarea-address, .order-textarea-notes {
+    font-size: 0.9rem;
+  }
+
+  .order-summary-title, .order-details-title {
+    font-size: 1.3rem;
+  }
+
+  .summary-item-name, .summary-item-size, .summary-item-quantity, .summary-item-price {
+    font-size: 0.9rem;
+  }
+
+  .order-total {
+    font-size: 1rem;
+  }
+
+  .order-confirm-button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-container {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .order-details, .order-summary {
+    padding: 10px;
+  }
+
+  .order-input-name, .order-input-phone, .order-textarea-address, .order-textarea-notes {
+    font-size: 0.8rem;
+  }
+
+  .order-summary-title, .order-details-title {
+    font-size: 1.2rem;
+  }
+
+  .summary-item-name, .summary-item-size, .summary-item-quantity, .summary-item-price {
+    font-size: 0.8rem;
+  }
+
+  .order-total {
+    font-size: 0.9rem;
+  }
+
+  .order-confirm-button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.delivery-charges-note {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
